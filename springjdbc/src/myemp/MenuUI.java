@@ -7,6 +7,10 @@ public class MenuUI implements AbstractUI {
 	Scanner key = new Scanner(System.in);
 	MyEmpDAO dao;
 
+	public MenuUI(MyEmpDAO dao) {
+		super();
+		this.dao = dao;
+	}
 	//시작을 알리는 메소드
 	public void show(){
 		System.out.println("**********회원관리 시스템************");
